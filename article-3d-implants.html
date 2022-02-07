@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style/style.css" />
+  <noscript>
+    <link rel="stylesheet" href="style/no-script.css" />
+  </noscript>
+  <title>Медитех информационный бюллитень</title>
+  <meta name="description" content="Медитех информационный бюллитень" />
+</head>
+
+<body>
+  <div class="grid container">
+    <header class="header grid__header" id="header">
+      <nav class="header-nav">
+        <a class="header-nav__logo" href="index.html">
+          <img class="logo-img" src="img/MT_LOGO.svg" width="300" height="95" alt="Медитех информационный бюллитень" />
+        </a>
+        <ul class="header-nav__menu header-menu menu">
+          <li class="header-menu__item">
+            <a href="index.html" class="menu__link">Главная</a>
+          </li>
+          <li class="header-menu__item header-menu__item_active">
+            <a href="all-articles.html" class="menu__link">Статьи</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="index.html#events" class="menu__link">Мероприятия</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="contacts.html" class="menu__link">Контакты</a>
+          </li>
+
+        </ul>
+        <button class="open-menu-btn" aria-label="Открыть меню">
+          <span class="open-menu-btn__bar"></span>
+          <span class="open-menu-btn__bar"></span>
+          <span class="open-menu-btn__bar"></span>
+        </button>
+        <div class="min-menu visually-hidden">
+          <button class="min-menu__close-btn"></button>
+          <ul class="menu-column menu">
+            <li class="menu-column__item menu-column__item">
+              <a href="index.html" class="menu__link">Главная</a>
+            </li>
+            <li class="menu-column__item menu-column__item_active">
+              <a href="all-articles.html" class="menu__link">Статьи</a>
+            </li>
+            <li class="menu-column__item">
+              <a href="index.html#events" class="menu__link">Мероприятия</a>
+            </li>
+            <li class="menu-column__item">
+              <a href="contacts.html" class="menu__link">Контакты</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main grid__main">
+      <a href="all-articles.html" class="link btn-flex back-btn">
+        <img src="img/icons/arrow-back.svg" alt="Вернуться к списку статей" width="37" height="10" class="back-btn__img">
+        <p class="back-btn__text"> вернуться к списку статей </p>
+      </a>
+      <article class="big-article">
+        <h1 class="big-article__title">
+          3D – ТЕХНОЛОГИИ ДЛЯ НАВИГАЦИОННОЙ ХИРУРГИИ И ПРОТЕЗИРОВАНИЯ
+        </h1>
+        <p class="big-article__text">
+          Наступила эра технологий, которые прочно вошли в нашу жизнь в
+          различных областях деятельности человека, в том числе, и в медицине,
+          создав массу возможностей для диагностики и лечения пациентов.
+          Современное оборудование позволяет «заглянуть внутрь человека»,
+          выбрать наиболее оптимальный алгоритм лечения, виртуально
+          спланировать операцию, смоделировать комплект вспомогательных
+          инструментов, создать уникальные индивидуальные имплантаты и
+          спрогнозировать результат лечения. Широкое применение находят
+          цифровые технологии и в ортопедической стоматологии. Традиционный
+          подход состоит в имплантации по данным компьютерной томографии,
+          снятии оттисков с протезного ложа, отливки гипсовой модели и
+          ортопедической конструкции, это достаточно трудоемкий и долгий
+          процесс.
+        </p>
+        <p class="big-article__text">Благодаря развитию компьютерного моделирования, процесс подготовки ротовой полости
+          к протезированию с опорой на имплантаты существенно облегчился, позволяя хирургу в процессе работы оценивать и
+          анализировать клиническую картину, быстро и качественно подготовить ротовую полость пациента к протезированию,
+          смоделировав хирургический шаблон и необходимый протез, предупреждать возможные осложнения.</p>
+        <p class="big-article__text">Используя виртуальное планирование и хирургические шаблоны можно достичь высокой
+          точности установки дентальных протезов и сделать результаты лечения предсказуемыми. Тем не менее, немногие
+          врачи применяют методику компьютерного моделирования в своей работе. Это связано с тем, что далеко не все
+          врачи владеют навыками работы в подобных программах. В таком случае, в качестве помощника в реализации задач
+          врача выступает биоинженер.</p>
+        <p class="big-article__text">Все системы компьютерного моделирования представлены несколькими основными
+          компонентами:
+        </p>
+        <ul class="big-article__list text-list">
+          <li class="text-list__item">модули для диагностических исследований;</li>
+          <li class="text-list__item">модули для проектирования; </li>
+          <li class="text-list__item">модули для изготовления, то есть 3D печати. </li>
+        </ul>
+        <p class="big-article__text">Каждому из указанных модулей соответствует определенный этап подготовки к
+          протезированию:
+        </p>
+        <ol class=" big-article__num-list text-num-list">
+          <li class="text-num-list__item">
+            Получение цифрового слепка с помощью сканеров или дигитайзеров, применяющих контактные и бесконтактные
+            методы измерения профиля поверхности.
+            <figure class="big-article__picture picture">
+              <img src="img/3D-implants/Рис-1.png" alt="3D модель челюсти пациента, полученная путем сканирования"
+                width="600" height="316" class="big-article__img">
+              <figcaption class="picture__description">Рис.1. 3D модель челюсти пациента, полученная путем сканирования
+              </figcaption>
+            </figure>
+          </li>
+          <li class="text-num-list__item"> Получение компьютерной томограммы области интереса.</li>
+          <li class="text-num-list__item">
+            Преобразование биоинженером снимков в 3D модель.
+            <figure class="big-article__picture picture">
+              <img src="img/3D-implants/Рис-2.png"
+                alt="3D модель челюсти пациента, преобразованная из компьютерной томограммы" width="600" height="343"
+                class="big-article__img">
+              <figcaption class="picture__description">Рис.2. 3D модель челюсти пациента, преобразованная из
+                компьютерной томограммы</figcaption>
+            </figure>
+          </li>
+          <li class="text-num-list__item">Совмещение биоинженером результатов проведенных диагностических исследований.
+            <figure class="big-article__picture picture">
+              <img src="img/3D-implants/Рис-3.png" alt="3D модель совмещения методов исследования " width="600"
+                height="329" class="big-article__img">
+              <figcaption class="picture__description">Рис.3. 3D модель совмещения методов исследования. </figcaption>
+            </figure>
+          </li>
+          <li class="text-num-list__item">Разработка плана операции и конструирование биоинженером моделей шаблонов и
+            индивидуальных имплантатов.
+            <figure class="big-article__picture picture_double">
+              <img src="img/3D-implants/Рис-4.png" alt="3D модель шаблона" width="600" height="390"
+                class="big-article__img">
+              <img src="img/3D-implants/Рис-5.png" alt="3D модель шаблона" width="600" height="339"
+                class="big-article__img">
+              <figcaption class="picture__description">Рис.4, 5. 3D модель шаблона. </figcaption>
+            </figure>
+          </li>
+          <li class="text-num-list__item"> Изготовление (3D печать) хирургического шаблона и протеза.
+            <figure class="big-article__picture">
+              <img src="img/3D-implants/Рис-6.png" alt="Готовый шаблон и анатомическая модель" width="600" height="450"
+                class="big-article__img">
+              <img src="img/3D-implants/Рис-7.png" alt="Готовый шаблон и анатомическая модель" width="600" height="450"
+                class="big-article__img">
+              <figcaption class="picture__description">Рис.6, 7. Фото готового шаблона и анатомической модели.
+              </figcaption>
+            </figure>
+          </li>
+        </ol>
+        <p class="big-article__text">В процессе компьютерного моделирования врач совместно с биоинженером учитывают все
+          анатомические особенности пациента, определяют какие костные структуры категорически нельзя затрагивать, а
+          какие требуют аугментации, подбирают элементы из линейки стандартных изделий, определяют места и глубину
+          позиционирования креплений, проектируют конструкцию индивидуального имплантата. Благодаря тесному
+          взаимодействию врач формирует план операции и осуществляет подготовку к операции. Такая готовность врача
+          существенно сокращает время проведения операции, снижает вероятность возникновения экстренных ситуаций во
+          время самой операции, предотвращает многие нежелательные последствия и предупреждает развитие осложнений, а
+          пациенту позволяет в короткие сроки вернуть зубы и улучшить качество жизни.</p>
+        <div class="big-article__meta">
+          <p class="big-article__meta-date visually-hidden"></p>
+          <p class="big-article__meta-author">автор статьи: <br> Алиева Севиндж, <br>
+            ассистент кафедры стоматологии хирургической и ЧЛХ ФГБОУ ВО ПСПбГМУ им.ак. И. П. Павлова Минздрава России</p>
+        </div>
+      </article>
+      <a href="all-articles.html" class="link btn-flex back-btn">
+        <img src="img/icons/arrow-back.svg" alt="Вернуться к списку статей" width="37" height="10"
+          class="back-btn__img">
+        <p class="back-btn__text"> вернуться к списку статей </p>
+      </a>
+    </main>
+    <aside class="aside grid__aside">
+      <ul class="aside__banners banners">
+        <li class="banners__item">
+          <a class="link" href="#">
+            <p class="visually-hidden">Рекламодатель 1</p>
+            <img class="banners__img" src="img/banner-example.jpg" alt="Рекламодатель 1" width="200" height="133" />
+          </a>
+        </li>
+        <li class="banners__item">
+          <a class="link" href="#">
+            <p class="visually-hidden">Рекламодатель 2</p>
+            <img class="banners__img" src="img/banner-example.jpg" alt="Рекламодатель 2" width="200" height="133" />
+          </a>
+        </li>
+        <li class="banners__item">
+          <a class="link" href="#">
+            <p class="visually-hidden">Рекламодатель 3</p>
+            <img class="banners__img" src="img/banner-example.jpg" alt="Рекламодатель 1" width="200" height="133" />
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <button class="btn-up visually-hidden" type="button" aria-label="Наверх"></button>
+    <footer class="footer grid__footer">
+      <section class="footer-content">
+        <p class="footer-content__item">© Медитех, 2022 г.</p>
+        <div class="footer-content__item footer-contacts">
+          <p class="footer-contacts__item">Редакция:</p>
+          <p class="footer-contacts__phone">тел./факс: 8 (812) 703–76-33</p>
+          <p class="footer-contacts__mail">e-mail: med-70@mail.ru</p>
+        </div>
+      </section>
+    </footer>
+  </div>
+  <script src="script/main.js"></script>
+</body>
+
+</html>

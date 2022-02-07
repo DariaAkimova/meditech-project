@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style/style.css" />
+  <noscript>
+    <link rel="stylesheet" href="style/no-script.css" />
+  </noscript>
+  <title>Медитех информационный бюллитень</title>
+  <meta name="description" content="Медитех информационный бюллитень" />
+</head>
+
+<body>
+  <div class="grid container">
+    <header class="header grid__header" id="header">
+      <nav class="header-nav">
+        <a class="header-nav__logo" href="index.html">
+          <img class="logo-img" src="img/MT_LOGO.svg" width="300" height="95" alt="Медитех информационный бюллитень" />
+        </a>
+        <ul class="header-nav__menu header-menu menu">
+          <li class="header-menu__item ">
+            <a href="index.html" class="menu__link">Главная</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="all-articles.html" class="menu__link">Статьи</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="index.html#events" class="menu__link">Мероприятия</a>
+          </li>
+          <li class="header-menu__item header-menu__item_active">
+            <a href="contacts.html" class="menu__link">Контакты</a>
+          </li>
+
+        </ul>
+        <button class="open-menu-btn" aria-label="Открыть меню">
+          <span class="open-menu-btn__bar"></span>
+          <span class="open-menu-btn__bar"></span>
+          <span class="open-menu-btn__bar"></span>
+
+        </button>
+        <div class="min-menu visually-hidden">
+          <button class="min-menu__close-btn"></button>
+          <ul class="menu-column menu">
+            <li class="menu-column__item ">
+              <a href="index.html" class="menu__link">Главная</a>
+            </li>
+            <li class="menu-column__item">
+              <a href="all-articles.html" class="menu__link">Статьи</a>
+            </li>
+            <li class="menu-column__item">
+              <a href="index.html#events" class="menu__link">Мероприятия</a>
+            </li>
+            <li class="menu-column__item menu-column__item_active">
+              <a href="contacts.html" class="menu__link">Контакты</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main grid__main">
+      <section class="section main__section">
+        <h1 class="section__title">Контакты</h1>
+        <p class="section__text">
+          <b> Учредитель, издатель и главный
+            редактор </b>: Останин Владимир Александрович
+        </p>
+        <p class="section__text"> <b>Адрес: </b> 197022,
+          Санкт-Петербург, ул. Даля, д. 10, лит. Б,
+          оф. 517 </p>
+        <p class="section__text"> <b>тел./факс: </b> <a href="tel:88127037633">8 (812) 703-76-33</a>, <a
+            href="tel:88123368084">8 (812)
+            336-80-84</a> </p>
+        <p class="section__text"> <b>e-mail: </b> <a href="mailto:med-70@mail.ru">med-70@mail.ru</a> </p>
+        <p class="section__text"> <b>Почтовый адрес издателя:</b> 197136, Санкт-
+          Петербург а/я 59, Останину В. А
+        </p>
+      </section>
+    </main>
+
+    <button class="btn-up visually-hidden" type="button" aria-label="Наверх"></button>
+    <footer class="footer grid__footer">
+      <section class="footer-content">
+        <p class="footer-content__item">© Медитех, 2022 г.</p>
+        <div class="footer-content__item footer-contacts">
+          <p class="footer-contacts__item">Редакция:</p>
+          <p class="footer-contacts__phone">тел./факс: 8 (812) 703–76-33</p>
+          <p class="footer-contacts__mail">e-mail: med-70@mail.ru</p>
+        </div>
+      </section>
+    </footer>
+  </div>
+  <script src="script/main.js"></script>
+
+</body>
+
+</html>
