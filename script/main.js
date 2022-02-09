@@ -31,4 +31,3 @@ const closeMenu = function  () {
 }
 
 menuButton.addEventListener('click', openMenu);
-
