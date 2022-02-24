@@ -252,7 +252,7 @@ background-size: cover;
 }
 
 .catalog__card {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .card__card:first-child {
@@ -312,8 +312,8 @@ background-size: cover;
 
 .events__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 100px));
+  gap: 20px;
   list-style: none;
   padding: 0;
 }
@@ -321,13 +321,7 @@ background-size: cover;
 .events__item {
   width: 100px;
   height: 100px;
-  margin-right: 30px;
-
-}
-
-.events__item:last-child {
-  margin-right: 0;
-}
+ }
 
 /* рекламные баннеры */
 
