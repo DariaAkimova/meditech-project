@@ -7,26 +7,26 @@ const goUp = () => window.scrollTo(0, 0);
 
 window.addEventListener('scroll', () => {
     if (window.pageYOffset > 100) {
-    upButton.classList.remove('visually-hidden');
+    upButton.classList.remove('hidden');
     upButton.addEventListener('click', goUp);
 
     
 } else {
-    upButton.classList.add('visually-hidden');
+    upButton.classList.add('hidden');
     upButton.removeEventListener('click', goUp);
      }
 }
 );
 
 const openMenu = () => {
-    minMenu.classList.remove('visually-hidden');
+    minMenu.classList.remove('hidden');
     closeMenuButton.addEventListener('click', closeMenu);
 }
 
 const removeCloseButtonListener = () => closeMenuButton.removeEventListener('click', closeMenu);
 
 const closeMenu = function  () {
-     minMenu.classList.add('visually-hidden');
+     minMenu.classList.add('hidden');
      removeCloseButtonListener();
 }
 

@@ -21,17 +21,25 @@ img {
     height: auto;
  }
 
-.visually-hidden {
+.hidden {
   display: none;
-  visibility: hidden;
+ }
+
+ .visually-hidden {
   position: absolute;
-  width: 0;
-  height: 0;
+
+  width: 1px;
+  height: 1px;
   margin: -1px;
+  border: 0;
   padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
-  border: none;
-}
+ }
 
 .container {
   width: 80%;
@@ -225,8 +233,7 @@ background-size: cover;
 
 .main__section {
   margin: 5px 0;
-  padding: 0 5px;
-}
+ }
 
 .section__title {
   font-weight: bold;
@@ -255,10 +262,6 @@ background-size: cover;
   margin-top: 15px;
 }
 
-.card__card:first-child {
-  margin-top: 0;
-}
-
 .card {
   width: 300px;
   box-sizing: border-box;
@@ -268,7 +271,12 @@ background-size: cover;
   justify-content: space-between;
   padding: 0 5px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+} 
+
+.card__card:first-child {
+  margin-top: 0;
 }
+
 
 .card__title {
   font-weight: 600;
