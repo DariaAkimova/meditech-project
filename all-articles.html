@@ -13,245 +13,221 @@
   <link type="image/png" sizes="48x48" rel="icon" href="favicon-48X48.png">
   <link type="image/png" sizes="120x120" rel="icon" href="favicon-120X120.png">
   <link rel="stylesheet" href="style/style.css" />
-  <noscript>
-    <link rel="stylesheet" href="style/no-script.css" />
-  </noscript>
   <title>Медитех информационный бюллетень</title>
-  <meta name="description" content="Список статей, опубликованных в журнале Медитех. 
+  <meta name="description"
+    content="Список статей, опубликованных в журнале Медитех. 
   Статьи по стоматологии, хирургии, на тему исследований в сфере медицинской техники и товаров медицинского назначения." />
 </head>
 
-<body>
-  <div class="grid container">
-    <header class="header grid__header" id="header">
-      <nav class="header-nav">
-        <a class="header-nav__logo" href="index.html">
-          <img class="logo-img" src="img/MT_LOGO.svg" width="300" height="95" alt="Медитех информационный бюллитень" />
-        </a>
-        <ul class="header-nav__menu header-menu menu">
-          <li class="header-menu__item">
-            <a href="index.html" class="menu__link">Главная</a>
-          </li>
-          <li class="header-menu__item header-menu__item_active">
-            <a href="all-articles.html" class="menu__link">Статьи</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="index.html#events" class="menu__link">Мероприятия</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="contacts.html" class="menu__link">Контакты</a>
-          </li>
-
-        </ul>
-        <button class="open-menu-btn" aria-label="Открыть меню">
-          <span class="open-menu-btn__bar"></span>
-          <span class="open-menu-btn__bar"></span>
-          <span class="open-menu-btn__bar"></span>
-        </button>
-        <div class="min-menu hidden">
-          <button class="min-menu__close-btn"></button>
-          <ul class="menu-column menu">
-            <li class="menu-column__item menu-column__item">
-              <a href="index.html" class="menu__link">Главная</a>
-            </li>
-            <li class="menu-column__item menu-column__item_active">
-              <a href="all-articles.html" class="menu__link">Статьи</a>
-            </li>
-            <li class="menu-column__item">
-              <a href="index.html#events" class="menu__link">Мероприятия</a>
-            </li>
-            <li class="menu-column__item">
-              <a href="contacts.html" class="menu__link">Контакты</a>
-            </li>
-
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main class="main grid__main">
-      <section class="section main__section all-articles">
-        <h1 class="section__title">Статьи</h1>
-        <section class="main__filters filters">
-          <h2 class="visually-hidden">Отфильтровать</h2>
-          <label for="category" class="filters__label">Выберите раздел:</label>
-
-          <select id="category" class="filters__select filter">
-            <option class="filter__option" value="dentistry">
-              Стоматология
-            </option>
-            <option class="filter__option" value="surgery">Хирургия</option>
-            <option class="filter__option" value="reserch">
-              Исследования
-            </option>
-            <option class="filter__option" value="other">Прочее</option>
-            <option class="filter__option" value="all" selected>Все</option>
-          </select>
-        </section>
-      </section>
-      <section class="main__section articles-list grid-adaptive">
-        <article class="articles-list__card article-card dentistry">
-          <a href="article-3d-implants.html" class="link articles-list__link">
-            <div class="card-grid">
-              <div class="article-card__category">Стоматология</div>
-              <h2 class="article-card__title">
-                3D-технологии для навигационной хирургии и протезирования
-              </h2>
-              <img src="img/3D-implants/img-5.png" class="article-card__img" alt="Печать хирургического шаблона"
-                width="600" height="353" />
-              <div class="article-card__meta">
-                <p class="article-card__meta-date hidden"></p>
-                <p class="article-card__meta-author">автор статьи: <br> Алиева Севиндж
-                </p>
-              </div>
-              <p class="article-card__text">
-                Наступила эра технологий, которые прочно вошли в нашу жизнь в
-                различных областях деятельности человека, в том числе, и в
-                медицине, создав массу возможностей для диагностики и лечения
-                пациентов. Современное оборудование позволяет «заглянуть
-                внутрь человека», выбрать наиболее оптимальный алгоритм
-                лечения, виртуально спланировать операцию, смоделировать
-                комплект вспомогательных инструментов, создать уникальные
-                индивидуальные имплантаты и спрогнозировать результат лечения.
-              </p>
-              <div class="article-card__btn">
-                ...читать далее
-              </div>
-            </div>
-          </a>
-        </article>
-
-        <article class="articles-list__card article-card reserch">
-          <a href="article-Illarionov-Volkov.html" class="link articles-list__link">
-            <div class="card-grid">
-              <div class="article-card__category">Исследования</div>
-              <h2 class="article-card__title">
-                Новые возможности исследования компонентного состава тела
-                человека с использованием трехчастотной сегментарной
-                биоимпедансометрии на аппаратно-программном комплексе
-                «АИСТ-ИРГТ- ДИАМАНТ».
-              </h2>
-              <img src="img/Illarionov-Volkov/img-1.png" class="article-card__img"
-                alt="Образец протокола исследования состава тела человека с помощью аппаратно-программного комплекса «Диамант Аист» "
-                width="600" height="303" />
-              <div class="article-card__meta">
-                <p class="article-card__meta-date hidden"></p>
-                <p class="article-card__meta-author">
-                  авторы статьи: <br />
-                  Илларионов В.В., <br />
-                  Волков Н.Ю.
-                </p>
-              </div>
-              <p class="article-card__text">
-                В настоящее время биоимпедансные методы широко используются в
-                здравоохранении, спортивной медицине, диетологии, фитнесс
-                индустрии. Огромным преимуществом биоимпедансного анализа
-                является безопасность, неинвазивность, простота использования,
-                небольшая продолжительность исследования. Методы
-                биоимпедансометрии проверены многолетней практикой и разрешены
-                к использованию Минздравом Российской Федерации.
-              </p>
-              <div class="article-card__btn">
-                ...читать далее
-              </div>
-            </div>
-          </a>
-        </article>
-
-        <article class="articles-list__card article-card surgery">
-          <a href="article-bilov-kley.html" class="link articles-list__link">
-            <div class="card-grid">
-              <div class="article-card__category">Хирургия</div>
-              <h2 class="article-card__title">
-                Хирургический клей-герметик человеческого происхождения
-              </h2>
-              <img src="img/bilov-kley/img-1.png" class="article-card__img article-card__img_small"
-                alt="Рисунок к статье" width="138" height="135" />
-              <div class="article-card__meta">
-                <p class="article-card__meta-date hidden"></p>
-                <p class="article-card__meta-author">
-                  автор статьи: <br />
-                  Былов К.В.
-                </p>
-              </div>
-              <p class="article-card__text">
-                Прямая угроза жизни при острых кровотечениях требует быстрых
-                организационных, диагностических и лечебных мер, направленных
-                в первую очередь на остановку кровотечения, предупреждение
-                геморрагического шока и восполнение кровопотери. Фирмой ООО
-                «ПЛАЗМА-ФТК» разработана технология отечественного
-                производства вирусинактивированного фибринтромбинового клея
-                (ФТК) «КРИОФИТ» из плазмы одного донора , которая внедрена в
-                серийное производство, получено регистрационное удостоверение
-                и сертификат СТ-1 о происхождении товара. В 2018-2020 гг
-                сделано около 2000 операций с применением клея «Криофит» в
-                различных областях хирургии.
-              </p>
-              <div class="article-card__btn">
-                ...читать далее
-              </div>
-            </div>
-          </a>
-        </article>
-
-        <article class="articles-list__card article-card dentistry">
-          <a href="article-skulovie-implants.html" class="link articles-list__link">
-            <div class="card-grid">
-              <div class="article-card__category">Стоматология</div>
-              <h2 class="article-card__title">
-                Скуловые и птеригоидные импланты
-              </h2>
-              <img src="img/skulovie-implanti/img-1.png" class="article-card__img" alt="Рисунок к статье" width="600"
-                height="384" />
-              <div class="article-card__meta">
-                <p class="article-card__meta-date hidden"></p>
-                <p class="article-card__meta-author">
-                  авторы статьи: <br />
-                  Алексенберг П.У., <br />
-                  Осипов В.Г., <br />
-                  Осипова B.B.
-                </p>
-              </div>
-              <p class="article-card__text">
-                Скуловые (или Zygomatic) и птеригоидные (или крыловидные)
-                имплантаты представляют собой два типа длинных имплантатов,
-                которые используются при протезировании зубов, когда у
-                пациента диагностировано недостаточное количество костной
-                ткани, или ее качество не позволяет закрепить имплантаты
-                обычных размеров. В этих случаях используются более плотная
-                кость, как та, что в области скуловой кости, чтобы закрепить
-                имплантаты, поскольку она всегда сохраняет свою твердость и
-                плотность.
-              </p>
-              <div class="article-card__btn">
-                ...читать далее
-              </div>
-            </div>
-          </a>
-        </article>
-      </section>
-    </main>
-    <aside class="aside grid__aside">
-      <ul class="aside__banners banners hidden">
-        <li class="banners__item">
-          <a class="link" href="#" target="_blank">
-            <p class="visually-hidden"></p>
-            <img class="banners__img" src="#" alt="Рекламодатель 1" width="200" height="133" />
-          </a>
+<body class="grid container">
+  <header class="header body__header" id="header">
+    <nav class="main-nav main-nav--closed no-js">
+      <a class="main-nav__logo" href="index.html" aria-label="Логотип Медитех информационный бюллитень">
+        <img class="logo-img" src="img/MT_LOGO.svg" width="300" height="95"
+          alt="Логотип Медитех информационный бюллитень" />
+      </a>
+      <ul class="main-nav__menu site-list">
+        <li class="site-list__item">
+          <a href="index.html" class="site-list__link">Главная</a>
+        </li>
+        <li class="site-list__item site-list__item_active">
+          <a href="#" class="site-list__link">Статьи</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#events" class="site-list__link">Мероприятия</a>
+        </li>
+        <li class="site-list__item">
+          <a href="contacts.html" class="site-list__link">Контакты</a>
         </li>
       </ul>
-    </aside>
-    <button class="btn-up hidden" type="button" aria-label="Наверх"></button>
-    <footer class="footer grid__footer">
-      <section class="footer-content">
-        <p class="footer-content__item">© Медитех, 2022г.</p>
-        <div class="footer-content__item footer-contacts">
-          <p class="footer-contacts__item">Редакция:</p>
-          <p class="footer-contacts__phone">тел./факс: 8 (812) 703–76-33</p>
-          <p class="footer-contacts__mail">e-mail: med-70@mail.ru</p>
-        </div>
+      <button class="main-nav__toggle toggle" aria-label="Открыть меню">
+        <span class="toggle__bar"></span>
+      </button>
+    </nav>
+  </header>
+  <main class="main grid__main">
+    <section class="section main__section all-articles">
+      <h1 class="section__title">Статьи</h1>
+      <section class="main__filters filters">
+        <h2 class="visually-hidden">Отфильтровать</h2>
+        <label for="category" class="filters__label">Выберите раздел:</label>
+
+        <select id="category" class="filters__select filter">
+          <option class="filter__option" value="dentistry">
+            Стоматология
+          </option>
+          <option class="filter__option" value="surgery">Хирургия</option>
+          <option class="filter__option" value="reserch">
+            Исследования
+          </option>
+          <option class="filter__option" value="other">Прочее</option>
+          <option class="filter__option" value="all" selected>Все</option>
+        </select>
       </section>
-    </footer>
-  </div>
+    </section>
+    <section class="main__section articles-list grid-adaptive">
+      <article class="articles-list__card article-card dentistry">
+        <a href="article-3d-implants.html" class="link articles-list__link">
+          <div class="card-grid">
+            <div class="article-card__category">Стоматология</div>
+            <h2 class="article-card__title">
+              3D-технологии для навигационной хирургии и протезирования
+            </h2>
+            <img src="img/3D-implants/img-5.png" class="article-card__img" alt="Печать хирургического шаблона"
+              width="600" height="353" />
+            <div class="article-card__meta">
+              <p class="article-card__meta-date hidden"></p>
+              <p class="article-card__meta-author">автор статьи: <br> Алиева Севиндж
+              </p>
+            </div>
+            <p class="article-card__text">
+              Наступила эра технологий, которые прочно вошли в нашу жизнь в
+              различных областях деятельности человека, в том числе, и в
+              медицине, создав массу возможностей для диагностики и лечения
+              пациентов. Современное оборудование позволяет «заглянуть
+              внутрь человека», выбрать наиболее оптимальный алгоритм
+              лечения, виртуально спланировать операцию, смоделировать
+              комплект вспомогательных инструментов, создать уникальные
+              индивидуальные имплантаты и спрогнозировать результат лечения.
+            </p>
+            <div class="article-card__btn">
+              ...читать далее
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="articles-list__card article-card reserch">
+        <a href="article-Illarionov-Volkov.html" class="link articles-list__link">
+          <div class="card-grid">
+            <div class="article-card__category">Исследования</div>
+            <h2 class="article-card__title">
+              Новые возможности исследования компонентного состава тела
+              человека с использованием трехчастотной сегментарной
+              биоимпедансометрии на аппаратно-программном комплексе
+              «АИСТ-ИРГТ- ДИАМАНТ».
+            </h2>
+            <img src="img/Illarionov-Volkov/img-1.png" class="article-card__img"
+              alt="Образец протокола исследования состава тела человека с помощью аппаратно-программного комплекса «Диамант Аист» "
+              width="600" height="303" />
+            <div class="article-card__meta">
+              <p class="article-card__meta-date hidden"></p>
+              <p class="article-card__meta-author">
+                авторы статьи: <br />
+                Илларионов В.В., <br />
+                Волков Н.Ю.
+              </p>
+            </div>
+            <p class="article-card__text">
+              В настоящее время биоимпедансные методы широко используются в
+              здравоохранении, спортивной медицине, диетологии, фитнесс
+              индустрии. Огромным преимуществом биоимпедансного анализа
+              является безопасность, неинвазивность, простота использования,
+              небольшая продолжительность исследования. Методы
+              биоимпедансометрии проверены многолетней практикой и разрешены
+              к использованию Минздравом Российской Федерации.
+            </p>
+            <div class="article-card__btn">
+              ...читать далее
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="articles-list__card article-card surgery">
+        <a href="article-bilov-kley.html" class="link articles-list__link">
+          <div class="card-grid">
+            <div class="article-card__category">Хирургия</div>
+            <h2 class="article-card__title">
+              Хирургический клей-герметик человеческого происхождения
+            </h2>
+            <img src="img/bilov-kley/img-1.png" class="article-card__img article-card__img_small" alt="Рисунок к статье"
+              width="138" height="135" />
+            <div class="article-card__meta">
+              <p class="article-card__meta-date hidden"></p>
+              <p class="article-card__meta-author">
+                автор статьи: <br />
+                Былов К.В.
+              </p>
+            </div>
+            <p class="article-card__text">
+              Прямая угроза жизни при острых кровотечениях требует быстрых
+              организационных, диагностических и лечебных мер, направленных
+              в первую очередь на остановку кровотечения, предупреждение
+              геморрагического шока и восполнение кровопотери. Фирмой ООО
+              «ПЛАЗМА-ФТК» разработана технология отечественного
+              производства вирусинактивированного фибринтромбинового клея
+              (ФТК) «КРИОФИТ» из плазмы одного донора , которая внедрена в
+              серийное производство, получено регистрационное удостоверение
+              и сертификат СТ-1 о происхождении товара. В 2018-2020 гг
+              сделано около 2000 операций с применением клея «Криофит» в
+              различных областях хирургии.
+            </p>
+            <div class="article-card__btn">
+              ...читать далее
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="articles-list__card article-card dentistry">
+        <a href="article-skulovie-implants.html" class="link articles-list__link">
+          <div class="card-grid">
+            <div class="article-card__category">Стоматология</div>
+            <h2 class="article-card__title">
+              Скуловые и птеригоидные импланты
+            </h2>
+            <img src="img/skulovie-implanti/img-1.png" class="article-card__img" alt="Рисунок к статье" width="600"
+              height="384" />
+            <div class="article-card__meta">
+              <p class="article-card__meta-date hidden"></p>
+              <p class="article-card__meta-author">
+                авторы статьи: <br />
+                Алексенберг П.У., <br />
+                Осипов В.Г., <br />
+                Осипова B.B.
+              </p>
+            </div>
+            <p class="article-card__text">
+              Скуловые (или Zygomatic) и птеригоидные (или крыловидные)
+              имплантаты представляют собой два типа длинных имплантатов,
+              которые используются при протезировании зубов, когда у
+              пациента диагностировано недостаточное количество костной
+              ткани, или ее качество не позволяет закрепить имплантаты
+              обычных размеров. В этих случаях используются более плотная
+              кость, как та, что в области скуловой кости, чтобы закрепить
+              имплантаты, поскольку она всегда сохраняет свою твердость и
+              плотность.
+            </p>
+            <div class="article-card__btn">
+              ...читать далее
+            </div>
+          </div>
+        </a>
+      </article>
+    </section>
+  </main>
+  <aside class="aside grid__aside">
+    <ul class="aside__banners banners hidden">
+      <li class="banners__item">
+        <a class="link" href="#" target="_blank">
+          <p class="visually-hidden"></p>
+          <img class="banners__img" src="#" alt="Рекламодатель 1" width="200" height="133" />
+        </a>
+      </li>
+    </ul>
+  </aside>
+  <button class="btn-up hidden" type="button" aria-label="Наверх"></button>
+  <footer class="footer grid__footer">
+    <section class="footer-content">
+      <p class="footer-content__item">© Медитех, 2022г.</p>
+      <div class="footer-content__item footer-contacts">
+        <p class="footer-contacts__item">Редакция:</p>
+        <p class="footer-contacts__phone">тел./факс: 8 (812) 703–76-33</p>
+        <p class="footer-contacts__mail">e-mail: med-70@mail.ru</p>
+      </div>
+    </section>
+  </footer>
   <script src="script/main.js"></script>
   <script src="script/filter.js"></script>
 </body>

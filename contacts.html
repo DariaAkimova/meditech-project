@@ -13,63 +13,38 @@
   <link type="image/png" sizes="48x48" rel="icon" href="favicon-48X48.png">
   <link type="image/png" sizes="120x120" rel="icon" href="favicon-120X120.png">
   <link rel="stylesheet" href="style/style.css" />
-  <noscript>
-    <link rel="stylesheet" href="style/no-script.css" />
-  </noscript>
   <title>Контакты</title>
   <meta name="description" content="Учредитель, издатель и главный
   редактор: Останин Владимир Александрович. Телефон: 8 (812) 703-76-33, 8 (812)
   336-80-84, e-mail: med-70@mail.ru" />
 </head>
 
-<body>
-  <div class="grid container">
-    <header class="header grid__header" id="header">
-      <nav class="header-nav">
-        <a class="header-nav__logo" href="index.html">
-          <img class="logo-img" src="img/MT_LOGO.svg" width="300" height="95" alt="Медитех информационный бюллитень" />
-        </a>
-        <ul class="header-nav__menu header-menu menu">
-          <li class="header-menu__item ">
-            <a href="index.html" class="menu__link">Главная</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="all-articles.html" class="menu__link">Статьи</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="index.html#events" class="menu__link">Мероприятия</a>
-          </li>
-          <li class="header-menu__item header-menu__item_active">
-            <a href="contacts.html" class="menu__link">Контакты</a>
-          </li>
-
-        </ul>
-        <button class="open-menu-btn" aria-label="Открыть меню">
-          <span class="open-menu-btn__bar"></span>
-          <span class="open-menu-btn__bar"></span>
-          <span class="open-menu-btn__bar"></span>
-
-        </button>
-        <div class="min-menu hidden">
-          <button class="min-menu__close-btn"></button>
-          <ul class="menu-column menu">
-            <li class="menu-column__item ">
-              <a href="index.html" class="menu__link">Главная</a>
-            </li>
-            <li class="menu-column__item">
-              <a href="all-articles.html" class="menu__link">Статьи</a>
-            </li>
-            <li class="menu-column__item">
-              <a href="index.html#events" class="menu__link">Мероприятия</a>
-            </li>
-            <li class="menu-column__item menu-column__item_active">
-              <a href="contacts.html" class="menu__link">Контакты</a>
-            </li>
-
-          </ul>
-        </div>
+<body class="grid container">
+  <header class="header body__header" id="header">
+    <nav class="main-nav main-nav--closed no-js">
+      <a class="main-nav__logo" href="index.html" aria-label="Логотип Медитех информационный бюллитень">
+        <img class="logo-img" src="img/MT_LOGO.svg" width="300" height="95"
+          alt="Логотип Медитех информационный бюллитень" />
+      </a>
+      <ul class="main-nav__menu site-list">
+        <li class="site-list__item">
+          <a href="index.html" class="site-list__link">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="all-articles.html" class="site-list__link">Статьи</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#events" class="site-list__link">Мероприятия</a>
+        </li>
+        <li class="site-list__item site-list__item_active">
+          <a href="#" class="site-list__link">Контакты</a>
+        </li>
+      </ul>
+      <button class="main-nav__toggle toggle" aria-label="Открыть меню">
+        <span class="toggle__bar"></span>
+      </button>
       </nav>
-    </header>
+      </header>
     <main class="main grid__main">
       <section class="section main__section">
         <h1 class="section__title">Контакты</h1>
@@ -101,7 +76,7 @@
         </div>
       </section>
     </footer>
-  </div>
+  
   <script src="script/main.js"></script>
 
 </body>

@@ -1,33 +1,49 @@
-const upButton = document.querySelector('.btn-up');
-const menuButton = document.querySelector ('.open-menu-btn');
-const minMenu = document.querySelector('.min-menu');
-const closeMenuButton = minMenu.querySelector('.min-menu__close-btn');
+const upButton = document.querySelector(".btn-up");
+const menuButton = document.querySelector(".main-nav__toggle");
+const menu = document.querySelector(".main-nav");
+const closeMenuButton = menu.querySelector(".main-nav__close-btn");
+const noScriptElements = document.querySelectorAll(".no-js");
 
-const goUp = () => window.scrollTo(0, 0); 
+const activateScripts = () => {
+  noScriptElements.forEach((element) => element.classList.remove("no-js"));
+};
 
-window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 100) {
-    upButton.classList.remove('hidden');
-    upButton.addEventListener('click', goUp);
+const changeMenuClass = () => {
+  menu.classList.remove("main-nav--opened");
+  menu.classList.add("main-nav--closed");
+};
 
-    
-} else {
-    upButton.classList.add('hidden');
-    upButton.removeEventListener('click', goUp);
-     }
-}
-);
+const goUp = () => window.scrollTo(0, 0);
 
-const openMenu = () => {
-    minMenu.classList.remove('hidden');
-    closeMenuButton.addEventListener('click', closeMenu);
-}
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    upButton.classList.remove("hidden");
+    upButton.addEventListener("click", goUp);
+  } else {
+    upButton.classList.add("hidden");
+    upButton.removeEventListener("click", goUp);
+  }
+});
 
-const removeCloseButtonListener = () => closeMenuButton.removeEventListener('click', closeMenu);
+const openCloseMenu = () => {
+  if (menu.classList.contains("main-nav--closed")) {
+    menu.classList.remove("main-nav--closed");
+    menu.classList.add("main-nav--opened");
+  } else {
+    menu.classList.remove("main-nav--opened");
+    menu.classList.add("main-nav--closed");
+  }
+};
 
-const closeMenu = function  () {
-     minMenu.classList.add('hidden');
-     removeCloseButtonListener();
-}
+const removeCloseButtonListener = () =>
+  closeMenuButton.removeEventListener("click", closeMenu);
 
-menuButton.addEventListener('click', openMenu);
+const closeMenu = function () {
+  menu.classList.remove("main-nav--opened");
+  menu.classList.add("main-nav--closed");
+  removeCloseButtonListener();
+};
+
+activateScripts();
+changeMenuClass();
+menuButton.addEventListener("click", openCloseMenu);
