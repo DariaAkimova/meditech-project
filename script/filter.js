@@ -1,6 +1,6 @@
-const filter = document.querySelector(".filter");
+const filter = document.querySelector(".category-filter");
 const articleCards = document.querySelectorAll(".article-card");
-const allArticlesContainer = document.querySelector(".articles-list");
+const allArticlesContainer = document.querySelector(".articles-catalog");
 
 const makeOneColumn = (array) => {
   console.log(array.length);
