@@ -9,8 +9,8 @@ const activateScripts = () => {
 };
 
 const changeMenuClass = () => {
-  menu.classList.remove("main-nav--opened");
-  menu.classList.add("main-nav--closed");
+  menu.classList.remove("main-nav_opened");
+  menu.classList.add("main-nav_closed");
 };
 
 const goUp = () => window.scrollTo(0, 0);
@@ -26,12 +26,12 @@ window.addEventListener("scroll", () => {
 });
 
 const openCloseMenu = () => {
-  if (menu.classList.contains("main-nav--closed")) {
-    menu.classList.remove("main-nav--closed");
-    menu.classList.add("main-nav--opened");
+  if (menu.classList.contains("main-nav_closed")) {
+    menu.classList.remove("main-nav_closed");
+    menu.classList.add("main-nav_opened");
   } else {
-    menu.classList.remove("main-nav--opened");
-    menu.classList.add("main-nav--closed");
+    menu.classList.remove("main-nav_opened");
+    menu.classList.add("main-nav_closed");
   }
 };
 
@@ -39,8 +39,8 @@ const removeCloseButtonListener = () =>
   closeMenuButton.removeEventListener("click", closeMenu);
 
 const closeMenu = function () {
-  menu.classList.remove("main-nav--opened");
-  menu.classList.add("main-nav--closed");
+  menu.classList.remove("main-nav_opened");
+  menu.classList.add("main-nav_closed");
   removeCloseButtonListener();
 };
 
