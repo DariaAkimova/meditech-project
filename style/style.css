@@ -676,6 +676,10 @@ th {
   .container {
     padding: 0 30px;
   }
+
+  .article-card__btn {
+    visibility: visible;
+      }
 }
 
 @media screen and (max-width: 768px) {
@@ -741,7 +745,6 @@ th {
   }
 
   .big-article__text {
-    font-size: 14px;
     line-height: 1.3;
   }
 
