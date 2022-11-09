@@ -608,6 +608,10 @@ img {
   justify-self: start;
 }
 
+.big-article__list--secondary {
+  list-style-type: disc;
+}
+
 .big-article__meta {
   width: 50%;
   justify-self: end;
