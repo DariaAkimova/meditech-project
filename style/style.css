@@ -576,7 +576,6 @@ img {
 .big-article {
   display: grid;
   grid-template-columns: 1fr;
-  justify-items: center;
 }
 
 .big-article__title {
@@ -683,7 +682,7 @@ th {
 
   .article-card__btn {
     visibility: visible;
-      }
+  }
 }
 
 @media screen and (max-width: 768px) {
